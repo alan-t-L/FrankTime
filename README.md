@@ -16,10 +16,6 @@ The app was inspired by Francis “Frank” Hodsman.
 
 ## FrankTime conversion rules
 
-This section will describe the complete FrankTime conversion rules.
-
-## FrankTime conversion rules
-
 FrankTime divides each hour into three 20-minute parts, called thirds.
 
 Let **H** be the current hour and **H+1** be the following hour. The hour names wrap around midnight: 11 pm is followed by 12 am, and 11 am is followed by 12 pm.
