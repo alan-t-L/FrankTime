@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">FrankTime</string>
-    <string name="english_clock_description">English clock illustration</string>
-    <string name="german_clock_description">German clock illustration</string>
-    <string name="help_title_description">Open application help</string>
-</resources>
