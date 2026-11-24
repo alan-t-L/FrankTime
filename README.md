@@ -18,7 +18,69 @@ The app was inspired by Francis “Frank” Hodsman.
 
 This section will describe the complete FrankTime conversion rules.
 
-<!-- The full conversion rules will be added after review of FrankTimeFormatter.java. -->
+## FrankTime conversion rules
+
+FrankTime divides each hour into three 20-minute parts, called thirds.
+
+Let **H** be the current hour and **H+1** be the following hour. The hour names wrap around midnight: 11 pm is followed by 12 am, and 11 am is followed by 12 pm.
+
+### English rules
+
+| Minute | FrankTime wording |
+|---|---|
+| 0 | `twenty past a third to H` |
+| 1–19 | `[20 − minute] to a third past H` |
+| 20 | `a third past H` |
+| 21–39 | `[minute − 20] past two thirds to H+1` |
+| 40 | `a third to H+1` |
+| 41–59 | `[minute − 40] past a third to H+1` |
+
+For example:
+
+- `07:00` becomes `twenty past a third to seven`
+- `07:15` becomes `five to a third past seven`
+- `07:20` becomes `a third past seven`
+- `07:30` becomes `ten past two thirds to eight`
+- `07:40` becomes `a third to eight`
+- `07:45` becomes `five past a third to eight`
+- `07:59` becomes `nineteen past a third to eight`
+
+### Offset wording
+
+For offsets from 1 to 19:
+
+- Multiples of 5 use the number alone: `five`, `ten`, or `fifteen`.
+- Offset 1 uses `one`.
+- Other offsets use the number followed by `minutes`: `three minutes`, `seventeen minutes`.
+
+### German rules
+
+| Minute | FrankZeit wording |
+|---|---|
+| 0 | `zwanzig nach einem Drittel vor H` |
+| 1–19 | `[20 − Minute] vor einem Drittel nach H` |
+| 20 | `ein Drittel nach H` |
+| 21–39 | `[Minute − 20] nach zwei Dritteln vor H+1` |
+| 40 | `ein Drittel vor H+1` |
+| 41–59 | `[Minute − 40] nach einem Drittel vor H+1` |
+
+For example:
+
+- `07:00` becomes `zwanzig nach einem Drittel vor sieben`
+- `07:15` becomes `fünf vor einem Drittel nach sieben`
+- `07:20` becomes `ein Drittel nach sieben`
+- `07:30` becomes `zehn nach zwei Dritteln vor acht`
+- `07:40` becomes `ein Drittel vor acht`
+- `07:45` becomes `fünf nach einem Drittel vor acht`
+- `07:59` becomes `neunzehn nach einem Drittel vor acht`
+
+### German offset wording
+
+For offsets from 1 to 19:
+
+- Multiples of 5 use the number alone: `fünf`, `zehn`, or `fünfzehn`.
+- Offset 1 uses `eins`.
+- Other offsets use the number followed by `Minuten`: `drei Minuten`, `siebzehn Minuten`.
 
 ## Installation
 
