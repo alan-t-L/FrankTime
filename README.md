@@ -24,11 +24,12 @@ This section will describe the complete FrankTime conversion rules.
 
 ### Install the signed release APK
 
-1. Download the latest signed release APK from the repository’s **Releases** page.
-2. On your Android phone, open the downloaded APK using the Files or Downloads app.
-3. If Android asks whether to allow installation from the Files app, choose **Settings** and enable **Allow from this source**.
-4. Return to the APK and choose **Install**.
-5. Open FrankTime from the app drawer.
+1. Download the latest release APK from the [FrankTime / FrankZeit v1.1 release page](https://github.com/alan-t-L/FrankTime/releases/tag/v1.1).
+2. Select **FrankTime-release.apk** to download it.
+3. On your Android phone, open the downloaded APK using the Files or Downloads app.
+4. If Android asks whether to allow installation from the Files app, choose **Settings** and enable **Allow from this source**.
+5. Return to the APK and choose **Install**.
+6. Open FrankTime from the app drawer.
 
 The app requires Android 9 (API 28) or later.
 
