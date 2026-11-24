@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/mainScrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#E6E0F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/englishClockImage"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/english_clock_description"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clock_english" />
+
+            <TextView
+                android:id="@+id/mainTitleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="FrankTime"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#1E2A44"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="@string/help_title_description" />
+
+            <ImageView
+                android:id="@+id/germanClockImage"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/german_clock_description"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clock_german" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/helpHintView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="1dp"
+            android:text="Press title text for help"
+            android:textSize="10sp"
+            android:textColor="#475569"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/subtitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="A revolutionary way to tell the time"
+            android:textSize="14sp"
+            android:textColor="#475569"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/currentHeadingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="CURRENT TIME"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#64748B"
+            android:letterSpacing="0.08"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/digitalClockView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#1E2A44"
+            android:padding="18dp"
+            android:text="00:00:00"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#F4EAD6"
+            android:fontFamily="monospace"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/currentFrankTimeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#1E2A44"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:autoSizeTextType="uniform"
+            android:text="Current Time as FrankTime"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFD700"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/customHeadingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="SET CUSTOM TIME (24H)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#64748B"
+            android:letterSpacing="0.08"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="54dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <NumberPicker
+                android:id="@+id/hourPicker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <NumberPicker
+                android:id="@+id/minutePicker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/convertCustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#7FB3E8"
+            android:text="Convert Custom Time to FrankTime"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/customFrankTimeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#1E2A44"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:autoSizeTextType="uniform"
+            android:text="Custom Time as FrankTime"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFD700"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/languageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#7FB3E8"
+            android:text="Auf Deutsch (DE) wechseln"
+            android:textColor="#1E2A44"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/inspirationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="1dp"
+            android:text="Inspired by Francis 'Frank' Hodsman"
+            android:textSize="10sp"
+            android:textColor="#475569"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/creditView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="1dp"
+            android:text="FrankTime/FrankZeit App v1.1 &#169; Alan Laurie 2026"
+            android:textSize="10sp"
+            android:textColor="#475569"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/defaultLanguageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:minHeight="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:backgroundTint="#C8E6C9"
+            android:text="Standardsprache auf Deutsch (DE) einstellen"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>
