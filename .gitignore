@@ -1,0 +1,23 @@
+# Android / Gradle build output
+build/
+app/build/
+.gradle/
+local.properties
+
+# Android Studio and IntelliJ files
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing material — never upload these files
+*.jks
+*.keystore
+*.keystore.*
+keystore.properties
+signing.properties
+
+# Operating-system files
+.DS_Store
+Thumbs.db
